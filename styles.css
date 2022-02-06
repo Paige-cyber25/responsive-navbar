@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1440px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: #212329;
+    width: 100%;
+    height: 60px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.react-logo {
+    width: 100px;
+    height: 60px;
+    background-color: #212329;
+}
+
+.react-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #61DAFB;  
+}
+
+.nav-last-item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav-links {
+    margin-right: 20px;
+}
+
+.languageContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    color: #fff;
+}
+
+svg{
+    color : #fff;
+    background-color: #212329;
+}
+
+
+.react {
+    color: #61DAFB;
+}
+
+input[type=text] {
+    background-color: #212329;
+    border: none;
+}
+
+::placeholder {
+    color: #757575;
+    font-size: 18px;
+}
+
+.nav-last-item:last-child {
+    margin-right: 0px;
+}
+
+
+@media screen and (max-width:768px) {
+    .header {
+        display: flex;
+        width: 100%;
+        height: 100%; 
+        justify-content: space-between;
+    }
+
+    .react, .input, .version, .lang, .gitHub {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+    }
+}
